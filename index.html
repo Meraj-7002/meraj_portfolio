@@ -4,407 +4,304 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Meraj Ansari · Full-Stack Engineer</title>
-  <meta name="description" content="Full-stack engineer building backends that keep products running: distributed scraping, real-time sync, billing and LLM features." />
+  <meta name="description" content="Backend-leaning full-stack engineer with 2.5 years of experience. Job queues, reliable delivery, billing, query performance and safe restores." />
   <meta property="og:title" content="Meraj Ansari · Full-Stack Engineer" />
-  <meta property="og:description" content="Backend-first full-stack engineer. Distributed scraping, real-time sync, billing, AI pipelines." />
+  <meta property="og:description" content="I build backends for when things go wrong: dead workers, duplicate webhooks, failed restores." />
   <meta property="og:type" content="website" />
-  <meta name="theme-color" content="#f5f4f0" media="(prefers-color-scheme: light)" />
-  <meta name="theme-color" content="#0b0b0a" media="(prefers-color-scheme: dark)" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230d0d0c'/%3E%3Cpath d='M8 23V9h3l5 7 5-7h3v14h-3v-9l-5 7-5-7v9z' fill='%23ff4d00'/%3E%3C/svg%3E" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0c0d11" media="(prefers-color-scheme: dark)" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232230e8'/%3E%3Cpath d='M7 24V8h3.4l5.6 8 5.6-8H25v16h-3.4V14l-5.6 8-5.6-8v10z' fill='%23fff'/%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <script>
-    try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
-  </script>
 </head>
 <body>
 
-  <header class="nav" id="nav">
-    <div class="wrap nav-inner">
-      <a href="#top" class="brand" aria-label="Meraj Ansari, home">
-        <span class="mark">M</span><span class="brand-name">Meraj Ansari</span>
-      </a>
-      <nav class="nav-links" aria-label="Sections">
-        <a href="#work">Work</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <div class="nav-tools">
-        <button class="icon-btn" id="paletteBtn" aria-label="Open command menu"><kbd>⌘K</kbd></button>
-        <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">
-          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9z" fill="currentColor"/></svg>
-        </button>
-      </div>
-    </div>
+  <header class="top wrap">
+    <a href="#top" class="brand">Meraj Ansari</a>
+    <nav aria-label="Sections">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
   <main id="top">
-    <!-- Hero -->
-    <section class="wrap hero">
-      <div class="hero-copy">
-        <p class="status"><span class="dot"></span>Open to remote work and relocation</p>
-        <h1>I build the backend that keeps products running.</h1>
+    <section class="hero wrap">
+      <h1>I build backends for when things go wrong.</h1>
+      <div class="hero-foot">
         <p class="lede">
-          Full-stack engineer at PerfectlyOkay since 2024. I built a deal engine
-          that pulls from 26 affiliate networks, the storefront on top of it, and
-          the scraping fleet behind both. On my own time I build SaaS products
-          with real billing and security.
+          Dead workers, duplicate webhooks, failed restores. I'm a backend-leaning
+          full-stack engineer with 2.5 years of experience, at PerfectlyOkay since
+          April 2024. I work mostly in Node.js, TypeScript, MongoDB, Next.js and Angular.
         </p>
-        <div class="ctas">
-          <a class="btn btn-primary" href="#work">See my work</a>
-          <a class="btn" href="#contact">Send a request</a>
-          <a class="text-link" id="resumeLink" href="#" download>Résumé ↓</a>
+        <div class="hero-side">
+          <p>Bhiwandi, India. Open to remote roles and relocation.</p>
+          <p class="links">
+            <a href="#contact">Send a request</a>
+            <a data-link="github" target="_blank" rel="noopener">GitHub</a>
+            <a data-link="linkedin" target="_blank" rel="noopener">LinkedIn</a>
+            <a data-link="resume" download>Résumé</a>
+          </p>
         </div>
       </div>
-
-      <figure class="console" aria-label="Simulated production log">
-        <div class="console-bar">
-          <span>worker.log</span>
-          <span class="console-live"><span class="dot"></span>live</span>
-        </div>
-        <ol class="console-body" id="log"></ol>
-        <figcaption class="console-foot">Simulated, but every line is something I've built.</figcaption>
-      </figure>
     </section>
 
-    <section class="wrap">
-      <ul class="metrics">
-        <li><b>26</b><span>affiliate networks integrated</span></li>
-        <li><b>60+</b><span>coupon sources aggregated</span></li>
-        <li><b>40% → 5%</b><span>scraper block rate</span></li>
-        <li><b>−60%</b><span>AI cost, measured before and after</span></li>
-      </ul>
-    </section>
-
-    <!-- Work -->
-    <section class="wrap section" id="work">
+    <section class="wrap" id="work">
       <div class="sec-head">
+        <p class="route">GET /work</p>
         <h2>Selected work</h2>
-        <span class="sec-count">05</span>
+        <p class="sec-note">Before and after numbers come from benchmarks and tests on local, dev or seeded data. None of them are production figures.</p>
       </div>
 
-      <div class="projects">
-        <!-- 01 BrandSecurer -->
-        <article class="proj open">
-          <button class="proj-row" aria-expanded="true" aria-controls="p1">
-            <span class="proj-no">01</span>
-            <span class="proj-title">
-              <span class="proj-name">BrandSecurer</span>
-              <span class="proj-line">Brand-protection SaaS. Finds affiliates bidding on a brand in ads and search, captures evidence, runs the takedown.</span>
-            </span>
-            <span class="proj-tags">Personal · Next.js · Puppeteer</span>
-            <span class="plus" aria-hidden="true"></span>
-          </button>
-          <div class="proj-panel" id="p1">
-            <div class="proj-inner">
-              <div class="proj-detail">
-                <dl class="facts">
-                  <div><dt>Coverage</dt><dd>5 engines · 16 countries</dd></div>
-                  <div><dt>Affiliate ID</dt><dd>~90% accuracy</dd></div>
-                  <div><dt>SERP layer</dt><dd>6 providers</dd></div>
-                </dl>
-                <ul class="bullets">
-                  <li>Multi-tenant SaaS that watches paid ads and organic results, detects trademark and affiliate violations, and runs evidence capture and takedowns with SLA tracking.</li>
-                  <li>Puppeteer redirect tracer that names the affiliate ID and network behind multi-hop ads, with SSRF protection, per-host concurrency limits, a circuit breaker and CAPTCHA / proxy retries.</li>
-                  <li>SERP routing over 6 providers with weighted routing, automatic failover and per-query cost tracking.</li>
-                  <li>Paddle billing with signature-verified, idempotent webhooks, failed-event replay and scheduled reconciliation.</li>
-                  <li>Security: TOTP 2FA, hybrid RSA-OAEP / AES-256-GCM request encryption, replay protection, rate limiting. LLMs classify ads and draft outreach.</li>
-                </ul>
-                <p class="stack">Next.js · TypeScript · Node.js · MongoDB · Puppeteer · Paddle · NextAuth · OpenAI · Anthropic · Gemini</p>
-              </div>
-              <div class="lab" id="serpLab">
-                <div class="lab-head"><span>SERP router</span><span class="lab-hint">Click a provider to take it down</span></div>
-                <div class="providers" id="serpProviders"></div>
-                <div class="lab-stats">
-                  <div><b id="serpTotal">0</b><span>queries</span></div>
-                  <div><b id="serpRetries">0</b><span>retries</span></div>
-                  <div><b id="serpCost">$0.0000</b><span>avg cost</span></div>
-                </div>
-                <ol class="lab-log" id="serpLog"></ol>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- 02 Deal Engine -->
-        <article class="proj">
-          <button class="proj-row" aria-expanded="false" aria-controls="p2">
-            <span class="proj-no">02</span>
-            <span class="proj-title">
-              <span class="proj-name">Deal Engine</span>
-              <span class="proj-line">Production platform that collects and verifies coupons from 26 affiliate networks and 60+ sites.</span>
-            </span>
-            <span class="proj-tags">Work · Node · Playwright</span>
-            <span class="plus" aria-hidden="true"></span>
-          </button>
-          <div class="proj-panel" id="p2">
-            <div class="proj-inner">
-              <div class="proj-detail">
-                <dl class="facts">
-                  <div><dt>Sources</dt><dd>26 networks · 60+ sites</dd></div>
-                  <div><dt>Block rate</dt><dd>40% → 5%</dd></div>
-                  <div><dt>Quick-commerce</dt><dd>6 platforms</dd></div>
-                </dl>
-                <ul class="bullets">
-                  <li>Migrated from MySQL to MongoDB and redesigned the architecture around physically partitioned, project-specific collections with access validation, so client data never crosses projects.</li>
-                  <li>Integrated 26 affiliate networks through parallel fetch pipelines and authenticated-portal scraping.</li>
-                  <li>Automated Shopify and WooCommerce coupon verification with Camoufox / Playwright, adaptive browser-session pools, rate-limit recovery and residential proxies.</li>
-                  <li>Distributed scraping on a lease-based MongoDB job queue with remote workers and server fallback.</li>
-                  <li>Socket.IO browser streaming with remote takeover, plus a config-free universal coupon extractor.</li>
-                </ul>
-                <p class="stack">Node.js · Express · Angular · MongoDB · MySQL · Playwright · Camoufox · Socket.IO</p>
-              </div>
-              <div class="lab" id="queueLab">
-                <div class="lab-head"><span>Job queue</span><span class="lab-hint">Kill a worker: its lease expires, the job is reclaimed</span></div>
-                <div class="queue" id="queue"></div>
-                <div class="workers" id="workers"></div>
-                <div class="lab-stats">
-                  <div><b id="qDone">0</b><span>completed</span></div>
-                  <div><b id="qReclaimed">0</b><span>reclaimed</span></div>
-                  <div><b>0</b><span>lost</span></div>
-                </div>
-                <ol class="lab-log" id="queueLog"></ol>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- 03 Deal Platform -->
-        <article class="proj">
-          <button class="proj-row" aria-expanded="false" aria-controls="p3">
-            <span class="proj-no">03</span>
-            <span class="proj-title">
-              <span class="proj-name">Deal Platform</span>
-              <span class="proj-line">Public coupon storefront and admin console, kept in real-time sync with the Deal Engine.</span>
-            </span>
-            <span class="proj-tags">Work · Next.js · Socket.IO</span>
-            <span class="plus" aria-hidden="true"></span>
-          </button>
-          <div class="proj-panel" id="p3">
-            <div class="proj-inner">
-              <div class="proj-detail">
-                <dl class="facts">
-                  <div><dt>Sync</dt><dd>Outbox · Socket.IO</dd></div>
-                  <div><dt>Updates</dt><dd>Idempotent, version-guarded</dd></div>
-                  <div><dt>Access</dt><dd>DB-driven RBAC</dd></div>
-                </dl>
-                <ul class="bullets">
-                  <li>Storefront and admin console with offer ranking, bank and card offers, and A/B testing.</li>
-                  <li>Cashback with fraud checks on withdrawals.</li>
-                  <li>Multi-provider authentication and database-driven RBAC.</li>
-                  <li>Real-time sync with the Deal Engine over project-scoped Socket.IO, using a transactional outbox and idempotent, version-guarded updates, so a late or repeated event never overwrites newer data.</li>
-                </ul>
-                <p class="stack">Next.js · MongoDB · Socket.IO · RBAC</p>
-              </div>
-              <div class="lab" id="syncLab">
-                <div class="lab-head"><span>Sync stream</span><button class="lab-btn" id="syncBtn">Replay</button></div>
-                <div class="sync-flow" aria-hidden="true">
-                  <span>Deal Engine</span><i></i><span>outbox</span><i></i><span>Socket.IO</span><i></i><span>Platform</span>
-                </div>
-                <ol class="sync-events" id="syncEvents">
-                  <li><code>offer:2291</code><span>v4 · price ₹499</span><em class="t-ok">applied</em></li>
-                  <li><code>offer:2291</code><span>v5 · price ₹449</span><em class="t-ok">applied</em></li>
-                  <li><code>offer:2291</code><span>v5 · redelivered</span><em class="t-muted">duplicate · skipped</em></li>
-                  <li><code>offer:2291</code><span>v3 · arrived late</span><em class="t-warn">stale · rejected</em></li>
-                  <li><code>offer:3107</code><span>v1 · new offer</span><em class="t-ok">applied</em></li>
-                </ol>
-                <div class="sync-state"><span class="muted">Platform holds</span><b>offer:2291 = v5 · ₹449</b></div>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- 04 Backupper -->
-        <article class="proj">
-          <button class="proj-row" aria-expanded="false" aria-controls="p4">
-            <span class="proj-no">04</span>
-            <span class="proj-title">
-              <span class="proj-name">Backupper</span>
-              <span class="proj-line">Backup, restore and monitoring for remote Linux servers, run entirely over SSH.</span>
-            </span>
-            <span class="proj-tags">Personal · SSH · systemd</span>
-            <span class="plus" aria-hidden="true"></span>
-          </button>
-          <div class="proj-panel" id="p4">
-            <div class="proj-inner">
-              <div class="proj-detail">
-                <dl class="facts">
-                  <div><dt>Targets</dt><dd>Files · MongoDB · MySQL</dd></div>
-                  <div><dt>Retries</dt><dd>3× exponential backoff</dd></div>
-                  <div><dt>Restore</dt><dd>Auto-rollback on failure</dd></div>
-                </dl>
-                <ul class="bullets">
-                  <li>Cron-scheduled backups with SHA-256-verified transfers that reject truncated uploads, and systemd cgroup CPU / memory limits. If the limits can't be applied, the job fails.</li>
-                  <li>Safe restores: staged previews, file and database diffs, drift and tamper detection, pre-restore safety copies, per-target locking, boot-time recovery.</li>
-                  <li>Monitoring: CPU / RAM sampling over SSH, spike detection against a 7-day baseline, disk-fill forecasting, missed-backup detection. Alerts go out over SSE and email, deduplicated.</li>
-                  <li>Read-only scanner for 6 compromise indicators with Fail2ban analysis. Email-OTP login, 15-minute lockouts, JWT revocation and SSH host-key pinning.</li>
-                </ul>
-                <p class="stack">Next.js · Node.js · MongoDB · MySQL · SSH/SFTP · JWT · SSE · systemd · cgroups · Cron</p>
-              </div>
-              <div class="lab">
-                <div class="lab-head"><span>Nightly run</span><button class="lab-btn" id="backupBtn">Run again</button></div>
-                <ol class="term" id="backupTerm"></ol>
-                <div class="lab-head"><span>Disk forecast</span><span class="lab-hint">Full in ~23 days</span></div>
-                <svg class="forecast" viewBox="0 0 400 120" preserveAspectRatio="none" role="img" aria-label="Disk usage trend with forecast">
-                  <line x1="0" y1="16" x2="400" y2="16" class="cap" />
-                  <line x1="240" y1="0" x2="240" y2="120" class="now" />
-                  <polyline class="used" points="0,104 30,101 60,99 90,92 120,90 150,85 180,80 210,76 240,69" />
-                  <polyline class="proj-line-svg" points="240,69 280,56 320,43 360,30 392,16" />
-                  <circle cx="392" cy="16" r="4" class="hit" />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- 05 AI -->
-        <article class="proj">
-          <button class="proj-row" aria-expanded="false" aria-controls="p5">
-            <span class="proj-no">05</span>
-            <span class="proj-title">
-              <span class="proj-name">AI in production</span>
-              <span class="proj-line">LLM features with guardrails, rollback and a measured budget.</span>
-            </span>
-            <span class="proj-tags">Work · OpenAI · Claude · Gemini</span>
-            <span class="plus" aria-hidden="true"></span>
-          </button>
-          <div class="proj-panel" id="p5">
-            <div class="proj-inner">
-              <div class="proj-detail">
-                <dl class="facts">
-                  <div><dt>AI cost</dt><dd>−60%, measured</dd></div>
-                  <div><dt>Providers</dt><dd>OpenAI · Claude · Gemini</dd></div>
-                  <div><dt>Ads</dt><dd>Rollback · idempotent</dd></div>
-                </dl>
-                <ul class="bullets">
-                  <li>Claude-based scraping workflow that cut AI cost by 60%, measured before and after.</li>
-                  <li>Grounded deal assistant with hallucination safeguards: it answers only from retrieved deals.</li>
-                  <li>Automated Google Ads optimisation with rollback and idempotent offline-conversion uploads.</li>
-                </ul>
-                <p class="stack">OpenAI · Anthropic · Gemini · Embeddings · Node.js · Google Ads API</p>
-              </div>
-              <div class="lab" id="groundLab">
-                <div class="lab-head"><span>Grounded answer</span><button class="lab-btn" id="groundBtn">Ask again</button></div>
-                <p class="g-q">Is there a free-shipping code for Store A?</p>
-                <ol class="g-src">
-                  <li><b>1</b> SHIPFREE · Store A · verified 2h ago · min. ₹999</li>
-                  <li><b>2</b> Store A policy · free shipping over ₹1,499</li>
-                </ol>
-                <div class="g-a">
-                  <p class="g-line">Yes. <b>SHIPFREE</b> gives free shipping on orders over ₹999.<sup>1</sup></p>
-                  <p class="g-line">Orders over ₹1,499 ship free without a code.<sup>2</sup></p>
-                  <p class="g-line bad">It also stacks with 20% off sitewide.<span class="g-flag">No source · removed</span></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Experience -->
-    <section class="wrap section" id="experience">
-      <div class="sec-head"><h2>Experience</h2></div>
-      <ol class="exp-list">
-        <li class="exp">
-          <div class="exp-when"><span>Apr 2024 — Now</span><span class="muted">Ulhasnagar, Thane</span></div>
-          <div class="exp-body">
-            <h3>Full-Stack Developer <span class="muted">· PerfectlyOkay Solutions</span></h3>
-            <ul class="bullets">
-              <li>Deal Engine: MySQL → MongoDB migration, 26 affiliate networks, and distributed scraping that cut blocking from 40% to 5%.</li>
-              <li>Deal Platform: storefront and admin console, synced in real time through a transactional outbox and Socket.IO.</li>
-              <li>AI: Claude workflow (−60% cost), grounded deal assistant, Google Ads automation with rollback.</li>
-              <li>Employee Management Portal: salary, onboarding, offboarding and admin modules. Sensitive documents are encrypted at rest and visible only to admins and the employee.</li>
-            </ul>
-          </div>
-        </li>
-        <li class="exp">
-          <div class="exp-when"><span>Jan — Apr 2024</span><span class="muted">Remote</span></div>
-          <div class="exp-body">
-            <h3>Web Developer Intern <span class="muted">· Learning Beyond Your Horizon (CBSE)</span></h3>
-            <p class="exp-note">Built the company homepage and responsive About Us and footer sections in HTML, CSS and JavaScript, working with designers and developers to meet deadlines.</p>
-          </div>
-        </li>
-        <li class="exp">
-          <div class="exp-when"><span>Aug — Nov 2023</span><span class="muted">Freelance</span></div>
-          <div class="exp-body">
-            <h3>Web Developer <span class="muted">· Local news channel</span></h3>
-            <p class="exp-note">Built responsive React front-ends for the channel's web app and connected them to back-end services for live news content.</p>
-          </div>
-        </li>
+      <ol class="index">
+        <li><a href="#deal-engine"><span>01</span><b>Deal Engine</b><em>Job queue, remote workers, coupon checks</em></a></li>
+        <li><a href="#deal-platform"><span>02</span><b>Deal Platform</b><em>Query performance, money safety, reliable sync</em></a></li>
+        <li><a href="#brandsecurer"><span>03</span><b>BrandSecurer</b><em>Redirect tracing, scanner resilience, billing</em></a></li>
+        <li><a href="#backupper"><span>04</span><b>Backupper</b><em>Safe restores, resource limits, monitoring</em></a></li>
       </ol>
 
-      <div class="toolbox">
-        <div><h4>Languages &amp; frameworks</h4><p>JavaScript · TypeScript · SQL · Node.js · Express · Next.js · Angular · React</p></div>
-        <div><h4>Data &amp; real-time</h4><p>MongoDB · MySQL · Socket.IO · SSE · Cron jobs · job queues</p></div>
-        <div><h4>Automation &amp; AI</h4><p>Playwright · Puppeteer · Camoufox · web scraping · affiliate APIs · OpenAI · Anthropic · Gemini · embeddings</p></div>
-        <div><h4>Security &amp; tools</h4><p>JWT · OAuth · NextAuth · RBAC · Paddle · Git · Postman · Linux / SSH</p></div>
-      </div>
-    </section>
+      <!-- 01 -->
+      <article class="case" id="deal-engine">
+        <p class="case-tag">01 · Deal Engine · PerfectlyOkay</p>
+        <h3>Scraping jobs that survive a dead worker.</h3>
+        <p class="case-sum">Collects offers from 26 affiliate networks, checks coupons, and runs price search across 6 quick-commerce platforms including Blinkit, Zepto and JioMart. Scraping runs on remote workers, so the queue has to cope with a worker disappearing mid-job.</p>
 
-    <!-- Contact -->
-    <section class="wrap section" id="contact">
-      <div class="sec-head"><h2>Open a request</h2></div>
-      <div class="contact">
-        <div class="contact-side">
-          <p class="contact-kicker">Have a hard problem, a product idea or an open role? Send a request. I reply within a day.</p>
-          <div class="contact-mail">
-            <a id="emailLink" href="#">—</a>
-            <button class="copy" id="copyBtn" aria-label="Copy email address">Copy</button>
-          </div>
-          <ul class="contact-links">
-            <li><a id="githubLink" href="#" target="_blank" rel="noopener">GitHub ↗</a></li>
-            <li><a id="linkedinLink" href="#" target="_blank" rel="noopener">LinkedIn ↗</a></li>
-            <li><a id="resumeLink2" href="#" download>Résumé ↓</a></li>
+        <figure class="path" aria-label="How a scrape job moves through the queue">
+          <figcaption>Normal path</figcaption>
+          <ol class="steps">
+            <li>Job enters the queue</li>
+            <li>One worker claims it atomically</li>
+            <li>Heartbeat every 30s renews the lease</li>
+            <li>Result goes back through the server</li>
+          </ol>
+          <figcaption class="fail">When it fails</figcaption>
+          <ul class="fails">
+            <li><b>Worker dies</b>Heartbeats stop, the 2-minute lease expires and the job can be claimed again.</li>
+            <li><b>No worker takes the job</b>A server fallback runs it, and only in that case.</li>
+          </ul>
+        </figure>
+
+        <div class="case-body">
+          <ul class="did">
+            <li><b>Database migration.</b> Moved 24 MySQL tables to MongoDB, rebuilt 24 of the 26 network integrations on it, and retired the old code. Each project gets physically separate collections, so client data stays isolated.</li>
+            <li><b>A paging bug.</b> In testing, skip/limit paging lost 1 of 10 offers during a concurrent delete. Keyset paging fixed it.</li>
+            <li><b>Browser takeover.</b> Live browser streaming lets a person take control of a remote session, and control actions are audited.</li>
+            <li><b>Coupon checks.</b> The WooCommerce checker tries the Store API, then a proxy, then stealth Chrome.</li>
+          </ul>
+          <table class="measured">
+            <caption>Measured in benchmarks</caption>
+            <thead><tr><th scope="col"></th><th scope="col">Before</th><th scope="col">After</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">First search in a new area</th><td>5–14s</td><td>~1s</td></tr>
+              <tr><th scope="row">Session restore vs full setup</th><td>4–24s</td><td>0.3–1.6s</td></tr>
+              <tr><th scope="row">JioMart search, with identical results</th><td>3.3–7.1s</td><td>0.9–1.8s</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="stack">Node.js · Express · Angular · MongoDB · Socket.IO · Playwright · Camoufox</p>
+      </article>
+
+      <!-- 02 -->
+      <article class="case" id="deal-platform">
+        <p class="case-tag">02 · Deal Platform · PerfectlyOkay</p>
+        <h3>An admin dashboard that stopped scanning whole collections.</h3>
+        <p class="case-sum">The public deal storefront and admin console, kept in sync with the Deal Engine. My work here is query performance, withdrawal safety, search correctness and the sync between the two systems.</p>
+
+        <figure class="path" aria-label="How an offer update travels from the Engine to the Platform">
+          <figcaption>Normal path</figcaption>
+          <ol class="steps">
+            <li>Engine writes the event to an outbox</li>
+            <li>Socket.IO sends it in capped batches</li>
+            <li>Platform applies it if the version is newer</li>
+            <li>Platform acknowledges delivery</li>
+          </ol>
+          <figcaption class="fail">When it fails</figcaption>
+          <ul class="fails">
+            <li><b>No ack within 15s</b>The event is retried on a later drain cycle. After 25 attempts it moves to a dead-letter queue.</li>
+            <li><b>Event repeats or arrives late</b>Idempotent, version-guarded updates mean it can't overwrite newer data.</li>
+          </ul>
+        </figure>
+
+        <div class="case-body">
+          <ul class="did">
+            <li><b>Proving a rewrite safe.</b> After rewriting the dashboard queries I compared old and new responses value by value: 3,029 of 3,140 were bit-identical and the rest were within rounding.</li>
+            <li><b>Double spend.</b> Closed a concurrent double-spend hole with atomic withdrawal claims.</li>
+            <li><b>Wrong search results.</b> Admin store search gave wrong results for 502 of 1,151 filter combinations. All were correct after the fix.</li>
+            <li><b>AI guardrails.</b> Four checks run after the Deal Assistant generates a reply, catching false verification claims, cashback claims, percentages and code-shaped tokens. Accuracy checks went from 22/43 to 43/43 on 19 prompts.</li>
+            <li><b>Saying no.</b> I rejected optimizations that didn't hold up when measured, including a covering index that made a query worse.</li>
+          </ul>
+          <table class="measured">
+            <caption>Measured in benchmarks</caption>
+            <thead><tr><th scope="col"></th><th scope="col">Before</th><th scope="col">After</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Dashboard collection scans</th><td>307</td><td>6</td></tr>
+              <tr><th scope="row">Dashboard documents examined</th><td>45.5M</td><td>0.56M</td></tr>
+              <tr><th scope="row">Activity feed documents examined</th><td>21.9M</td><td>50.6k</td></tr>
+              <tr><th scope="row">Vote writes, across 27 scenarios</th><td>12.0s</td><td>1.2s</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="stack">Next.js · Node.js · MongoDB · Socket.IO · OpenAI</p>
+      </article>
+
+      <!-- 03 -->
+      <article class="case" id="brandsecurer">
+        <p class="case-tag">03 · BrandSecurer</p>
+        <h3>Finding the affiliate hiding behind a redirect chain.</h3>
+        <p class="case-sum">A brand-protection product. It monitors 8 search engines across 42 selectable countries, follows ads through their redirects and identifies the affiliate bidding on a brand's name.</p>
+
+        <figure class="path" aria-label="How an ad is traced to an affiliate">
+          <figcaption>Normal path</figcaption>
+          <ol class="steps">
+            <li>Search result or ad is collected</li>
+            <li>Redirects are followed, up to 20 hops</li>
+            <li>The chain is matched to an affiliate network</li>
+            <li>The finding is recorded</li>
+          </ol>
+          <figcaption class="fail">When it fails</figcaption>
+          <ul class="fails">
+            <li><b>A host keeps failing</b>A circuit breaker opens after 3 failures, cools down for 90s, then allows one probe.</li>
+            <li><b>Cloudflare, 429 or CAPTCHA</b>The request is retried through a proxy, only for these block types.</li>
+            <li><b>A search provider goes down</b>Routing fails over automatically across 6 providers.</li>
+          </ul>
+        </figure>
+
+        <div class="case-body">
+          <ul class="did">
+            <li><b>False blocks.</b> A CAPTCHA check marked 12 of 22 healthy pages as blocked, cutting one run from 870 candidates to 237. I found and fixed it.</li>
+            <li><b>Dropped data.</b> A certificate stream dropped over 5M certificates on the shared web thread. I moved it to its own process.</li>
+            <li><b>Billing.</b> Paddle webhooks are signature-verified and deduplicated, with failed events replayed. Reconciliation runs every 15 minutes, and I moved the double-charge guard from client to server.</li>
+            <li><b>Security.</b> TOTP 2FA with hashed recovery codes, SSRF checks on every HTTP redirect hop, and sliding-window rate limiting on login and other routes.</li>
+          </ul>
+          <table class="measured">
+            <caption>Measured in tests</caption>
+            <thead><tr><th scope="col"></th><th scope="col">Before</th><th scope="col">After</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Confirmed findings, site A</th><td>0</td><td>14</td></tr>
+              <tr><th scope="row">Confirmed findings, site B</th><td>0</td><td>26</td></tr>
+              <tr><th scope="row">"Page empty" errors from tab-stealing</th><td>11</td><td>0</td></tr>
+              <tr><th scope="row">Ads-register walk, same output</th><td>98s</td><td>59s</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="stack">Next.js · TypeScript · Node.js · MongoDB · Puppeteer · Paddle</p>
+      </article>
+
+      <!-- 04 -->
+      <article class="case" id="backupper">
+        <p class="case-tag">04 · Backupper</p>
+        <h3>Restores you can preview before they touch the server.</h3>
+        <p class="case-sum">Backup, restore and monitoring for remote Linux servers over SSH, covering files, MongoDB and MySQL. A restore is the riskiest moment for a server, so it runs in checked stages.</p>
+
+        <figure class="path" aria-label="The stages of a restore">
+          <figcaption>Normal path</figcaption>
+          <ol class="steps">
+            <li>Backup is staged for a 30-minute preview</li>
+            <li>Files are diffed by manifest, then SHA-256</li>
+            <li>A safety copy is taken</li>
+            <li>Restore applies under a per-target lock</li>
+          </ol>
+          <figcaption class="fail">When it fails</figcaption>
+          <ul class="fails">
+            <li><b>Server changed since preview</b>The drift check catches it before anything is applied.</li>
+            <li><b>Staged files were altered</b>The tamper check catches it.</li>
+            <li><b>Apply fails</b>The restore rolls back automatically.</li>
+          </ul>
+        </figure>
+
+        <div class="case-body solo">
+          <ul class="did">
+            <li><b>My part in restore.</b> I started this flow and a colleague later extended it. The database diff compares collection and table names, not rows.</li>
+            <li><b>Resource limits.</b> Backups run under systemd cgroup CPU and memory limits, read back from inside the scope. If they can't be applied, the job fails.</li>
+            <li><b>Large exports.</b> Streaming NDJSON avoided about 15 GB of RAM on a 9 GB export in testing.</li>
+            <li><b>Monitoring.</b> Spike detection against a 7-day median baseline, least-squares disk forecasting up to 30 days ahead, and a missed-backup sweep every 15 minutes.</li>
           </ul>
         </div>
+        <p class="stack">Next.js · Node.js · MongoDB · MySQL · SSH/SFTP · SSE · systemd</p>
+      </article>
 
-        <form class="api" id="hireForm" novalidate>
-          <div class="api-bar">
-            <span class="api-method">POST</span>
-            <span class="api-path">/api/hire/meraj</span>
-            <span class="api-type">application/json</span>
-          </div>
-          <div class="api-body">
-            <span class="brace">{</span>
-            <label class="api-field"><span class="key">"name"</span><input name="name" required autocomplete="name" placeholder="Ada Lovelace" /></label>
-            <label class="api-field"><span class="key">"email"</span><input name="email" type="email" required autocomplete="email" placeholder="ada@company.com" /></label>
-            <label class="api-field"><span class="key">"type"</span>
-              <select name="type">
-                <option>full-time role</option>
-                <option>contract</option>
-                <option>collaboration</option>
-                <option>just saying hi</option>
-              </select>
-            </label>
-            <label class="api-field"><span class="key">"message"</span><textarea name="message" rows="4" required placeholder="What are you building?"></textarea></label>
-            <span class="brace">}</span>
-          </div>
-          <div class="api-foot">
-            <button class="btn btn-primary" type="submit">Send request <kbd class="kbd-inv">⏎</kbd></button>
-            <span class="api-hint">Opens your mail app with this filled in</span>
-          </div>
-          <pre class="api-resp" id="apiResp" aria-live="polite"><span class="muted">// response will appear here</span></pre>
-        </form>
+      <aside class="also">
+        <p class="case-tag">Also at PerfectlyOkay</p>
+        <div>
+          <h3>Employee portal</h3>
+          <p>Built the salary module with appraisal and edit history, plus offboarding, and extended onboarding that a teammate started. Replaced hardcoded offer letters and payslips with admin-editable templates. Documents are encrypted at rest with AES-256-GCM and checked per employee. Also fixed a stored XSS and missing admin checks on the blog APIs.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="wrap" id="experience">
+      <div class="sec-head">
+        <p class="route">GET /experience</p>
+        <h2>Experience</h2>
       </div>
+      <ol class="exp">
+        <li>
+          <span>Apr 2024 – Now</span>
+          <div><h3>Full-Stack Developer, PerfectlyOkay Solutions</h3><p>Deal Engine, Deal Platform and the employee portal. Ulhasnagar, Thane.</p></div>
+        </li>
+        <li>
+          <span>Jan – Apr 2024</span>
+          <div><h3>Web Developer Intern, Learning Beyond Your Horizon (CBSE)</h3><p>Company homepage and responsive sections in HTML, CSS and JavaScript. Remote.</p></div>
+        </li>
+        <li>
+          <span>Aug – Nov 2023</span>
+          <div><h3>Freelance Web Developer, local news channel</h3><p>React front-ends connected to back-end services for live news content.</p></div>
+        </li>
+      </ol>
+      <dl class="skills">
+        <div><dt>Daily</dt><dd>Node.js, TypeScript, MongoDB, Next.js, Angular, Socket.IO, Playwright, Puppeteer</dd></div>
+        <div><dt>Also</dt><dd>Express, React, MySQL, Linux and SSH, systemd, Paddle, OpenAI, Anthropic and Gemini APIs</dd></div>
+      </dl>
     </section>
   </main>
 
-  <footer class="wrap footer">
-    <span>© <span id="year"></span> Meraj Ansari</span>
-    <span>Bhiwandi, India · <span id="clock">--:--</span> IST</span>
-  </footer>
+  <section class="contact" id="contact">
+    <div class="wrap contact-grid">
+      <div class="contact-side">
+        <p class="route">POST /api/hire/meraj</p>
+        <h2>Open a request.</h2>
+        <p>Have a hard problem or an open role? Send a request and I'll reply within a day.</p>
+        <p class="mail" data-needs="email"><a id="emailLink"></a><button type="button" id="copyBtn">Copy</button></p>
+        <p class="links">
+          <a data-link="github" target="_blank" rel="noopener">GitHub</a>
+          <a data-link="linkedin" target="_blank" rel="noopener">LinkedIn</a>
+          <a data-link="resume" download>Résumé</a>
+        </p>
+      </div>
 
-  <div class="palette" id="palette" hidden>
-    <div class="palette-box" role="dialog" aria-modal="true" aria-label="Command menu">
-      <input id="paletteInput" placeholder="Jump to…" autocomplete="off" spellcheck="false" />
-      <ol id="paletteList"></ol>
+      <form class="api" id="hireForm" novalidate>
+        <div class="api-bar">
+          <span class="api-method">POST</span>
+          <span>/api/hire/meraj</span>
+          <span class="api-type">application/json</span>
+        </div>
+        <div class="api-body">
+          <span class="brace">{</span>
+          <label class="api-field"><span class="key">"name"</span><input name="name" required autocomplete="name" placeholder="Your name" /></label>
+          <label class="api-field"><span class="key">"email"</span><input name="email" type="email" required autocomplete="email" placeholder="you@company.com" /></label>
+          <label class="api-field"><span class="key">"type"</span>
+            <select name="type">
+              <option>full-time role</option>
+              <option>contract</option>
+              <option>collaboration</option>
+              <option>just saying hi</option>
+            </select>
+          </label>
+          <label class="api-field"><span class="key">"message"</span><textarea name="message" rows="4" required placeholder="What are you building?"></textarea></label>
+          <span class="brace">}</span>
+        </div>
+        <div class="api-foot">
+          <button class="send" type="submit">Send request</button>
+          <span>Opens your mail app with this filled in.</span>
+        </div>
+        <pre class="api-resp" id="apiResp" aria-live="polite"><span class="dim">// response appears here</span></pre>
+      </form>
     </div>
-  </div>
-
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <footer class="wrap footer">© 2026 Meraj Ansari</footer>
+  </section>
 
   <script src="main.js"></script>
 </body>
