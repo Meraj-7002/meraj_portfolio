@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>404 · Page Not Found</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .err-wrap { min-height: 80vh; display: flex; flex-direction: column; justify-content: center; }
+    .err-code { font: 600 clamp(48px, 10vw, 120px) var(--mono); color: var(--accent); line-height: 1; }
+    .err-msg { font-size: 20px; color: var(--fg-2); margin-top: 16px; max-width: 28em; }
+    .err-back { margin-top: 32px; font-weight: 500; }
+  </style>
+</head>
+<body>
+  <div class="wrap err-wrap">
+    <p class="route">HTTP/1.1 404 Not Found</p>
+    <div class="err-code">404</div>
+    <p class="err-msg">The route you requested doesn't exist on this server. Maybe it was moved, or never built.</p>
+    <p class="err-back"><a href="./">← Return to root (GET /)</a></p>
+  </div>
+</body>
+</html>

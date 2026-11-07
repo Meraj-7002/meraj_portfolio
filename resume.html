@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Meraj Ansari - Full-Stack &amp; Backend Engineer - Resume</title>
+  <style>
+    @page {
+      size: letter;
+      margin: 0.28in 0.38in 0.26in 0.38in;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: #11141a;
+      background: #ffffff;
+      font-size: 8.2pt;
+      line-height: 1.25;
+      -webkit-font-smoothing: antialiased;
+    }
+    a {
+      color: #1a32c4;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 6px;
+      border-bottom: 1.5px solid #1a32c4;
+      padding-bottom: 5px;
+    }
+    h1 {
+      font-size: 15.5pt;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #0c0d11;
+      text-transform: uppercase;
+      margin-bottom: 1px;
+    }
+    .headline {
+      font-size: 8.6pt;
+      font-weight: 600;
+      color: #1a32c4;
+      margin-bottom: 3px;
+      letter-spacing: 0.01em;
+    }
+    .contact-line {
+      font-size: 7.8pt;
+      color: #3b404a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .contact-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 3.5px;
+      color: #272a30;
+      text-decoration: none;
+    }
+    .contact-item svg {
+      width: 10.5px;
+      height: 10.5px;
+      fill: #1a32c4;
+      flex-shrink: 0;
+    }
+    .contact-item span {
+      color: #1a32c4;
+      font-weight: 500;
+    }
+    .section {
+      margin-bottom: 5.5px;
+    }
+    .section:last-child {
+      margin-bottom: 0;
+    }
+    .section-title {
+      font-size: 8.6pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #0c0d11;
+      border-bottom: 1px solid #d4d7dc;
+      padding-bottom: 1px;
+      margin-bottom: 3px;
+    }
+    .summary-text {
+      font-size: 8pt;
+      color: #2b2f38;
+      line-height: 1.28;
+      text-align: justify;
+    }
+    .exp-item {
+      margin-bottom: 4.5px;
+    }
+    .exp-item:last-child {
+      margin-bottom: 0;
+    }
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 8.4pt;
+      font-weight: 700;
+      color: #0c0d11;
+    }
+    .item-sub {
+      display: flex;
+      justify-content: space-between;
+      font-size: 7.6pt;
+      font-style: italic;
+      color: #4f5563;
+      margin-bottom: 1.5px;
+    }
+    .item-tags {
+      font-size: 7.4pt;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      color: #1a32c4;
+      font-weight: 600;
+      margin-bottom: 1.5px;
+    }
+    ul {
+      list-style-type: square;
+      padding-left: 12px;
+    }
+    li {
+      margin-bottom: 1.5px;
+      font-size: 7.9pt;
+      color: #262930;
+      line-height: 1.23;
+    }
+    li:last-child {
+      margin-bottom: 0;
+    }
+    strong {
+      color: #0c0d11;
+      font-weight: 600;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 96px 1fr;
+      gap: 1.5px 6px;
+      font-size: 7.8pt;
+      line-height: 1.24;
+    }
+    .skill-cat {
+      font-weight: 700;
+      color: #0c0d11;
+      text-transform: capitalize;
+    }
+    .skill-vals {
+      color: #262930;
+    }
+    .edu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 7.9pt;
+      margin-bottom: 1px;
+    }
+    .edu-title {
+      font-weight: 600;
+      color: #0c0d11;
+    }
+    .edu-inst {
+      color: #4f5563;
+      font-size: 7.6pt;
+    }
+    .edu-date {
+      font-size: 7.5pt;
+      color: #555;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      white-space: nowrap;
+    }
+    @media print {
+      body {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Meraj Ansari</h1>
+    <div class="headline">Full-Stack Engineer | Backend Systems &amp; SaaS Architecture | Distributed Workers &amp; Automation</div>
+    <div class="contact-line">
+      <!-- Location -->
+      <span class="contact-item">
+        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+        Bhiwandi, Maharashtra, India
+      </span>
+      <!-- Phone -->
+      <a href="tel:+917020002628" class="contact-item">
+        <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.24 1.02l-2.21 2.19z"/></svg>
+        <span>+91 7020002628</span>
+      </a>
+      <!-- Email -->
+      <a href="mailto:ansarimeraj7002@gmail.com" class="contact-item">
+        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        <span>ansarimeraj7002@gmail.com</span>
+      </a>
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/meraj-ansari-4b37bb190" target="_blank" class="contact-item">
+        <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14m-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 00-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+        <span>LinkedIn</span>
+      </a>
+      <!-- GitHub -->
+      <a href="https://github.com/Meraj-7002" target="_blank" class="contact-item">
+        <svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 002 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"/></svg>
+        <span>GitHub</span>
+      </a>
+      <!-- Portfolio -->
+      <a href="https://meraj-7002.github.io/meraj_portfolio" target="_blank" class="contact-item">
+        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+        <span>Portfolio</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Professional Summary</div>
+    <div class="summary-text">
+      <strong>Full-Stack Engineer with 2.5 years of production experience</strong> designing and operating distributed worker architectures, scalable SaaS backends, and high-performance automation workflows at PerfectlyOkay Solutions. Deeply hands-on with Node.js, TypeScript, MongoDB, Next.js, and browser engines (Puppeteer/Playwright). Known for taking end-to-end technical ownership: architecting lease-based worker queues with zero database exposure, engineering sub-second quick-commerce scraping pipelines, optimizing database read paths by 99.8%, and applying strict defensive patterns against system failures.
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Technical Skills</div>
+    <div class="skills-grid">
+      <div class="skill-cat">Languages</div>
+      <div class="skill-vals">TypeScript, JavaScript (ES6+), SQL, HTML5, CSS3</div>
+      
+      <div class="skill-cat">Backend Systems</div>
+      <div class="skill-vals">Node.js, Express.js, REST APIs, Distributed Job Queues, WebSocket / Socket.IO, SSE, Cron Scheduling, Transactional Outbox</div>
+      
+      <div class="skill-cat">Databases</div>
+      <div class="skill-vals">MongoDB (Aggregation Pipelines, Index Optimization, Partitioned Collections), MySQL (Schema Design, Migration)</div>
+      
+      <div class="skill-cat">Automation &amp; Scraping</div>
+      <div class="skill-vals">Puppeteer, Playwright, Camoufox, Remote Worker Pools, Off-Screen Headful Execution, Session Stores, Proxy Routing</div>
+      
+      <div class="skill-cat">AI &amp; Generative AI</div>
+      <div class="skill-vals">OpenAI, Anthropic Claude &amp; Google Gemini APIs, Multi-Model Routing, Post-Generation Hallucination Validators</div>
+
+      <div class="skill-cat">Security &amp; DevOps</div>
+      <div class="skill-vals">JWT, OAuth 2.0, NextAuth, RBAC, TOTP 2FA, AES-256-GCM, SSRF Defense, Linux (Systemd &amp; Cgroups), Git, Docker</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Professional Experience</div>
+    
+    <div class="exp-item">
+      <div class="item-header">
+        <span>Full-Stack Developer · PerfectlyOkay Solutions Pvt. Ltd.</span>
+        <span>Apr 2024 – Present</span>
+      </div>
+      <div class="item-sub">
+        <span>Ulhasnagar, Thane, Maharashtra</span>
+        <span>Deal Engine, Deal Platform &amp; Internal HR Portal</span>
+      </div>
+      <ul>
+        <li><strong>Distributed Scraping Worker Architecture:</strong> Designed and implemented the offer-scrape worker system; decoupled browser execution from the central database, enabling remote/local workers to claim jobs over HTTPS via atomic 2-minute leases, 30s heartbeats, and automatic server fallback when offline. Wrapped Puppeteer with injected off-screen window parking (`--window-position`) to run headful Chrome without disturbing user desktops while evading bot-detection.</li>
+        <li><strong>Quick-Commerce Price Aggregation Engine:</strong> Built real-time price &amp; product search across 6 platforms (Blinkit, Zepto, JioMart, DMart, Flipkart Minutes, Amazon Now); engineered an adaptive browser pool with session snapshot persistence that slashed warm query latency to <strong>0.17s – 0.56s</strong> with 4 parallel platform fetches, down from 5–14s in cold setups.</li>
+        <li><strong>Automated Coupon Verification Pipeline:</strong> Integrated 26 affiliate network pipelines and built automated coupon validation for WooCommerce (Store API first, proxy fallback, stealth Chrome) and extended Shopify checks; built live WebSocket verification streaming, masked coupon code detection, and platform detection crons.</li>
+        <li><strong>Database Migration &amp; Tenant Partitioning:</strong> Migrated legacy system from MySQL (24 tables) to MongoDB using Node.js and Express; redesigned architecture with 13 physically partitioned collection types per project to guarantee complete data isolation; eliminated a paging data-loss bug by replacing skip/limit with keyset pagination.</li>
+        <li><strong>Query Performance &amp; Synchronization:</strong> Rewrote analytics queries on 2.4M+ documents—slashed dashboard scans from <strong>307 to 6</strong>, examined documents from <strong>45.5M to 0.56M</strong>, and cut activity feed reads from <strong>21.9M to 50.6k (99.8% drop)</strong>; synchronized Deal Engine and Platform via a transactional outbox with 15s ack timeouts, dead-letter queues, and atomic withdrawal claims preventing double-spends.</li>
+        <li><strong>AI Assistants &amp; Enterprise Security:</strong> Integrated OpenAI, Claude, and Gemini to power a grounded deal assistant with 4 post-generation hallucination validators, lifting prompt check passes from 22/43 to 43/43; built the HR portal's salary history module with AES-256-GCM encryption at rest and patched stored XSS and unauthorized blog APIs.</li>
+      </ul>
+    </div>
+
+    <div class="exp-item">
+      <div class="item-header">
+        <span>Web Developer Intern · Learning Beyond Your Horizon (CBSE)</span>
+        <span>Jan 2024 – Apr 2024</span>
+      </div>
+      <div class="item-sub">
+        <span>Remote</span>
+        <span>HTML5, CSS3, JavaScript</span>
+      </div>
+      <ul>
+        <li>Developed the official homepage and modular responsive sections, optimizing page layout and cross-browser rendering.</li>
+      </ul>
+    </div>
+
+    <div class="exp-item">
+      <div class="item-header">
+        <span>Freelance Web Developer · Local News Channel</span>
+        <span>Aug 2023 – Nov 2023</span>
+      </div>
+      <div class="item-sub">
+        <span>Maharashtra, India</span>
+        <span>React.js, REST APIs</span>
+      </div>
+      <ul>
+        <li>Engineered dynamic React.js frontend views integrated with backend REST APIs for real-time article publishing and categorization.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Flagship Engineering Projects</div>
+
+    <div class="exp-item">
+      <div class="item-header">
+        <span>BrandSecurer — Multi-Tenant Brand Protection SaaS</span>
+        <span>Next.js, TypeScript, Node.js, MongoDB, Puppeteer, Paddle</span>
+      </div>
+      <ul>
+        <li>Architected an ad violation tracker monitoring paid and organic search across <strong>8 search engines in 42 selectable countries</strong>; built a 20-hop Puppeteer redirect tracer identifying affiliate IDs across 34 networks with SSRF validation on every redirect hop.</li>
+        <li>Implemented a circuit breaker (3 failures trigger 90s probe) and failover routing across 6 SERP providers; integrated Paddle billing with signature-verified idempotent webhooks (14 event types), failed-event replay, and 15-minute reconciliation.</li>
+      </ul>
+    </div>
+
+    <div class="exp-item">
+      <div class="item-header">
+        <span>Backupper — Server Backup, Restore &amp; Health Monitoring Platform</span>
+        <span>Next.js, Node.js, MongoDB, MySQL, SSH2 / SFTP, Systemd / Cgroups</span>
+      </div>
+      <ul>
+        <li>Built an SSH-driven backup engine for remote Linux servers (files, MongoDB, MySQL) enforcing systemd cgroup CPU and memory limits inside scopes; eliminated ~15 GB RAM overhead on 9 GB exports by streaming NDJSON.</li>
+        <li>Implemented staged 30-minute preview restores with SHA-256 diffing and automatic rollback; built telemetry monitoring featuring 7-day median baseline spike detection, least-squares disk-fill forecasting up to 30 days, and SSE alerts.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Education</div>
+    <div class="edu-item">
+      <div>
+        <span class="edu-title">Bachelor of Engineering (B.E.) in Information Technology</span>
+        <span class="edu-inst"> — M.H. Saboo Siddik College of Engineering (Mumbai University)</span>
+      </div>
+      <span class="edu-date">2019 – 2023</span>
+    </div>
+    <div class="edu-item">
+      <div>
+        <span class="edu-title">Higher Secondary Certificate (HSC) in Science</span>
+        <span class="edu-inst"> — The Scholar's High School and Junior College</span>
+      </div>
+      <span class="edu-date">2017 – 2019</span>
+    </div>
+  </div>
+
+</body>
+</html>

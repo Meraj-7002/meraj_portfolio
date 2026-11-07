@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#0c0d11" />
+  <!-- subtle grid pattern -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1d202b" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grid)" opacity="0.7"/>
+
+  <!-- top pill / route -->
+  <rect x="80" y="70" width="220" height="34" rx="4" fill="#181a24" stroke="#272932"/>
+  <text x="96" y="93" fill="#99a3ff" font-family="monospace" font-size="14" font-weight="600">GET /api/engineer/meraj</text>
+
+  <!-- main headline -->
+  <text x="80" y="210" fill="#eff0f4" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="64" font-weight="700" letter-spacing="-2">
+    I build backends for
+  </text>
+  <text x="80" y="285" fill="#eff0f4" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="64" font-weight="700" letter-spacing="-2">
+    when things go wrong.
+  </text>
+
+  <!-- sub-lede -->
+  <text x="80" y="360" fill="#8d909c" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="400">
+    Dead workers · Duplicate webhooks · Failed restores · Query optimization
+  </text>
+
+  <!-- footer divider -->
+  <line x1="80" y1="450" x2="1120" y2="450" stroke="#272932" stroke-width="2" />
+
+  <!-- author & stack info -->
+  <text x="80" y="510" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="600">
+    Meraj Ansari
+  </text>
+  <text x="80" y="545" fill="#8d909c" font-family="monospace" font-size="18">
+    Full-Stack &amp; Backend Engineer · Node.js · TypeScript · MongoDB · Next.js
+  </text>
+
+  <!-- github handle badge -->
+  <rect x="940" y="490" width="180" height="48" rx="6" fill="#2230e8" />
+  <text x="965" y="521" fill="#ffffff" font-family="monospace" font-size="16" font-weight="600">github/Meraj-7002</text>
+</svg>

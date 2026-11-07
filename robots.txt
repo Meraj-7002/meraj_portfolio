@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://meraj-7002.github.io/meraj_portfolio/sitemap.xml

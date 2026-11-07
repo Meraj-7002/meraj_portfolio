@@ -1,9 +1,9 @@
 // Your details. Anything left empty is hidden from the page.
 const CONFIG = {
-  email: "",    // TODO: the address the contact form sends to
-  linkedin: "", // TODO: https://www.linkedin.com/in/your-handle
+  email: "ansarimeraj7002@gmail.com",
+  linkedin: "https://www.linkedin.com/in/meraj-ansari-4b37bb190",
   github: "https://github.com/Meraj-7002",
-  resume: "",   // TODO: add the PDF to this folder, then set "resume.pdf"
+  resume: "resume.pdf",
 };
 
 const $$ = (s, el = document) => [...el.querySelectorAll(s)];
@@ -67,3 +67,34 @@ form.addEventListener("submit", (e) => {
     location.href = `mailto:${CONFIG.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   }, 600);
 });
+
+// Scroll Reveal Observer
+const initReveal = () => {
+  const reveals = $$(".reveal");
+  if (!reveals.length) return;
+
+  if (!("IntersectionObserver" in window)) {
+    reveals.forEach((el) => el.classList.add("active"));
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.1, rootMargin: "0px 0px -40px 0px" }
+  );
+
+  reveals.forEach((el) => observer.observe(el));
+};
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initReveal);
+} else {
+  initReveal();
+}

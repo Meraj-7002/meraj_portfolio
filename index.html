@@ -8,6 +8,11 @@
   <meta property="og:title" content="Meraj Ansari · Full-Stack Engineer" />
   <meta property="og:description" content="I build backends for when things go wrong: dead workers, duplicate webhooks, failed restores." />
   <meta property="og:type" content="website" />
+  <meta property="og:image" content="og-image.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Meraj Ansari · Full-Stack Engineer" />
+  <meta name="twitter:description" content="I build backends for when things go wrong: dead workers, duplicate webhooks, failed restores." />
+  <meta name="twitter:image" content="og-image.svg" />
   <meta name="color-scheme" content="light dark" />
   <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
   <meta name="theme-color" content="#0c0d11" media="(prefers-color-scheme: dark)" />
@@ -19,7 +24,9 @@
 </head>
 <body>
 
-  <header class="top wrap">
+  <a href="#top" class="skip">Skip to content</a>
+
+  <header class="top wrap" id="header">
     <a href="#top" class="brand">Meraj Ansari</a>
     <nav aria-label="Sections">
       <a href="#work">Work</a>
@@ -30,8 +37,8 @@
 
   <main id="top">
     <section class="hero wrap">
-      <h1>I build backends for when things go wrong.</h1>
-      <div class="hero-foot">
+      <h1 class="reveal">I build backends for when things go wrong.</h1>
+      <div class="hero-foot reveal">
         <p class="lede">
           Dead workers, duplicate webhooks, failed restores. I'm a backend-leaning
           full-stack engineer with 2.5 years of experience, at PerfectlyOkay since
@@ -46,6 +53,15 @@
             <a data-link="resume" download>Résumé</a>
           </p>
         </div>
+      </div>
+
+      <div class="numbers reveal">
+        <dl class="num-grid">
+          <div><dt>45.5M → 0.56M</dt><dd>documents examined after query rewrites</dd></div>
+          <div><dt>26</dt><dd>affiliate networks integrated</dd></div>
+          <div><dt>8 engines × 42 countries</dt><dd>brand monitoring coverage</dd></div>
+          <div><dt>502 of 1,151</dt><dd>broken filter combos found and fixed</dd></div>
+        </dl>
       </div>
     </section>
 
@@ -64,7 +80,7 @@
       </ol>
 
       <!-- 01 -->
-      <article class="case" id="deal-engine">
+      <article class="case reveal" id="deal-engine">
         <p class="case-tag">01 · Deal Engine · PerfectlyOkay</p>
         <h3>Scraping jobs that survive a dead worker.</h3>
         <p class="case-sum">Collects offers from 26 affiliate networks, checks coupons, and runs price search across 6 quick-commerce platforms including Blinkit, Zepto and JioMart. Scraping runs on remote workers, so the queue has to cope with a worker disappearing mid-job.</p>
@@ -86,10 +102,10 @@
 
         <div class="case-body">
           <ul class="did">
-            <li><b>Database migration.</b> Moved 24 MySQL tables to MongoDB, rebuilt 24 of the 26 network integrations on it, and retired the old code. Each project gets physically separate collections, so client data stays isolated.</li>
-            <li><b>A paging bug.</b> In testing, skip/limit paging lost 1 of 10 offers during a concurrent delete. Keyset paging fixed it.</li>
-            <li><b>Browser takeover.</b> Live browser streaming lets a person take control of a remote session, and control actions are audited.</li>
-            <li><b>Coupon checks.</b> The WooCommerce checker tries the Store API, then a proxy, then stealth Chrome.</li>
+            <li><b>Remote worker architecture.</b> Built the local/remote offer-scrape worker system. Workers need zero direct database access—everything runs over HTTPS via claim, heartbeat (30s), and report cycles with automatic 2-minute lease recovery and server fallback.</li>
+            <li><b>Off-screen headful browser execution.</b> Injected `--window-position` off-screen parking into Puppeteer to prevent scraping windows from interrupting desktop workflows while avoiding the bot detection that blocks headless browsers.</li>
+            <li><b>Quick-commerce price engine.</b> Engineered real-time price & product search across 6 platforms (Blinkit, Zepto, JioMart, DMart, Flipkart Minutes, Amazon Now). Added session snapshot persistence so warm searches return in 0.17–0.56s.</li>
+            <li><b>Coupon checking pipeline.</b> Built automated WooCommerce verification (Store API first, proxy fallback, then stealth Chrome), masked coupon code detection, and live verification progress streaming.</li>
           </ul>
           <table class="measured">
             <caption>Measured in benchmarks</caption>
@@ -105,7 +121,7 @@
       </article>
 
       <!-- 02 -->
-      <article class="case" id="deal-platform">
+      <article class="case reveal" id="deal-platform">
         <p class="case-tag">02 · Deal Platform · PerfectlyOkay</p>
         <h3>An admin dashboard that stopped scanning whole collections.</h3>
         <p class="case-sum">The public deal storefront and admin console, kept in sync with the Deal Engine. My work here is query performance, withdrawal safety, search correctness and the sync between the two systems.</p>
@@ -148,7 +164,7 @@
       </article>
 
       <!-- 03 -->
-      <article class="case" id="brandsecurer">
+      <article class="case reveal" id="brandsecurer">
         <p class="case-tag">03 · BrandSecurer</p>
         <h3>Finding the affiliate hiding behind a redirect chain.</h3>
         <p class="case-sum">A brand-protection product. It monitors 8 search engines across 42 selectable countries, follows ads through their redirects and identifies the affiliate bidding on a brand's name.</p>
@@ -191,7 +207,7 @@
       </article>
 
       <!-- 04 -->
-      <article class="case" id="backupper">
+      <article class="case reveal" id="backupper">
         <p class="case-tag">04 · Backupper</p>
         <h3>Restores you can preview before they touch the server.</h3>
         <p class="case-sum">Backup, restore and monitoring for remote Linux servers over SSH, covering files, MongoDB and MySQL. A restore is the riskiest moment for a server, so it runs in checked stages.</p>
@@ -239,21 +255,43 @@
       </div>
       <ol class="exp">
         <li>
-          <span>Apr 2024 – Now</span>
-          <div><h3>Full-Stack Developer, PerfectlyOkay Solutions</h3><p>Deal Engine, Deal Platform and the employee portal. Ulhasnagar, Thane.</p></div>
+          <span>Apr 2024 – Present</span>
+          <div><h3>Full-Stack Developer · PerfectlyOkay Solutions</h3><p>Production engineering across Deal Engine (distributed scraping & queue system), Deal Platform (query optimization & financial safety), and Employee Management Portal. Ulhasnagar, Thane.</p></div>
         </li>
         <li>
           <span>Jan – Apr 2024</span>
-          <div><h3>Web Developer Intern, Learning Beyond Your Horizon (CBSE)</h3><p>Company homepage and responsive sections in HTML, CSS and JavaScript. Remote.</p></div>
+          <div><h3>Web Developer Intern · Learning Beyond Your Horizon (CBSE)</h3><p>Company homepage and responsive web interfaces in HTML, CSS, and modern JavaScript. Remote.</p></div>
         </li>
         <li>
           <span>Aug – Nov 2023</span>
-          <div><h3>Freelance Web Developer, local news channel</h3><p>React front-ends connected to back-end services for live news content.</p></div>
+          <div><h3>Freelance Web Developer · Local News Channel</h3><p>React front-ends connected to back-end services for dynamic real-time news content.</p></div>
         </li>
       </ol>
+
+      <div class="sec-head" style="margin-top: clamp(48px, 6vw, 72px);">
+        <p class="route">GET /education</p>
+        <h2>Education</h2>
+      </div>
+      <ol class="exp">
+        <li>
+          <span>2019 – 2023</span>
+          <div>
+            <h3>Bachelor of Engineering in Information Technology</h3>
+            <p>M.H. Saboo Siddik College of Engineering · Mumbai University</p>
+          </div>
+        </li>
+        <li>
+          <span>2017 – 2019</span>
+          <div>
+            <h3>Higher Secondary Certificate (HSC) · Science</h3>
+            <p>The Scholar's High School and Junior College · Maharashtra State Board</p>
+          </div>
+        </li>
+      </ol>
+
       <dl class="skills">
         <div><dt>Daily</dt><dd>Node.js, TypeScript, MongoDB, Next.js, Angular, Socket.IO, Playwright, Puppeteer</dd></div>
-        <div><dt>Also</dt><dd>Express, React, MySQL, Linux and SSH, systemd, Paddle, OpenAI, Anthropic and Gemini APIs</dd></div>
+        <div><dt>Also</dt><dd>Express, React, MySQL, Linux & SSH, systemd/cgroups, Paddle, OpenAI, Anthropic Claude & Gemini APIs</dd></div>
       </dl>
     </section>
   </main>
